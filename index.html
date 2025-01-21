@@ -13,66 +13,30 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <style>
-      body {
-        font-family: "Lato", sans-serif;
-      }
-      .mySlides {
-        display: none;
-      }
-    </style>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="top">
-      <div class="bar black card">
-        <a
-          class="bar-item button padding-large hide-medium hide-large right"
-          href="javascript:void(0)"
-          onclick="myFunction()"
-          title="Toggle Navigation Menu"
-          ><i class="fa fa-bars"></i
-        ></a>
-        <a href="#" class="bar-item button padding-large">HOME</a>
-        <a
-          href="#o-nas"
-          class="bar-item button padding-large hide-small"
-          >O nás</a
-        >
-        <a
-          href="#cenik"
-          class="bar-item button padding-large hide-small"
-          >Ceník</a
-        >
-        <a
-          href="#kontakt"
-          class="bar-item button padding-large hide-small"
-          >Kontakt</a
-        >
-      </div>
+    <nav class="top black">
+      <ul class="navbar">
+        <li>
+          <a href="#header" class="bar-item button ">Domů</a>
+        </li>
+        <li>
+          <a href="#o-nas" class="bar-item button ">O nás</a>
+        </li>
+        <li>
+          <a href="#cenik" class="bar-item button ">Ceník</a>
+        </li>
+        <li>
+          <a href="#kontakt" class="bar-item button ">Kontakt</a>
+        </li>
+      </ul>
     </nav>
-
-    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-    <nav
-      id="navDemo"
-      class="bar-block black hide hide-large hide-medium top"
-      style="margin-top: 46px"
-    >
-      <a href="#o-nas" class="bar-item button padding-large">O nás</a>
-      <a href="#cenik" class="bar-item button padding-large">Ceník</a>
-      <a href="#kontakt" class="bar-item button padding-large"
-        >Kontakt</a
-      >
-    </nav>
-
     <!-- Page content -->
     <content class="content" style="margin-top: 46px">
-      <header></header>
-      <!-- The about Section -->
-      <section
-        class="container content center padding-64"
-        id="o-nas"
-      >
+      <header id="header"></header>
+      <!-- O nas sekce -->
+      <section class="container content center padding-64" id="o-nas">
         <h1 class="wide">IT Firma Roman</h1>
         <p class="opacity"><i>Milujeme počítače</i></p>
         <p class="justify"></p>
@@ -83,6 +47,7 @@
         oblasti technologií a jsou odhodláni poskytovat služby nejvyšší kvality.
         Spolupracujeme s různými klienty z různých odvětví a vždy se snažíme
         přizpůsobit naše služby jejich specifickým potřebám.
+
         <div class="services">
           <div>
             <h2>Správa sítí</h2>
@@ -135,12 +100,9 @@
         </div>
       </section>
 
-      <!-- End Page Content -->
-      <section
-        id="cenik"
-        class="container xlarge padding-64 light-grey"
-      >
-        <table class="styled-table">
+      <!-- Cenik sekce -->
+      <section id="cenik" class="container padding-64 light-grey">
+        <table class="pricing-table">
           <thead>
             <tr>
               <th>Služba</th>
@@ -173,10 +135,8 @@
           </tbody>
         </table>
       </section>
-      <section
-        class="container content padding-64 center"
-        id="kontakt"
-      >
+      <!-- Kontakt sekce-->
+      <section class="container content padding-64 center" id="kontakt">
         <h2 class="wide center">Kontakt</h2>
         <p class="opacity center">
           <i>Zavolejte nebo napište nám, rádi se s vámi spojíme!</i>
@@ -196,59 +156,14 @@
     </content>
 
     <!-- Footer -->
-    <footer
-      class="container padding-64 center opacity light-grey "
-    >
+    <footer class="container padding-32 center opacity light-grey">
       <i class="fa fa-facebook-official hover-opacity"></i>
       <i class="fa fa-instagram hover-opacity"></i>
       <i class="fa fa-snapchat hover-opacity"></i>
       <i class="fa fa-pinterest-p hover-opacity"></i>
       <i class="fa fa-twitter hover-opacity"></i>
       <i class="fa fa-linkedin hover-opacity"></i>
-      <p class="medium">
-        Powered by
-        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
-          >w3.css</a
-        >
-      </p>
+      <p class="medium">&copy;2025 Created by J.Zizka</p>
     </footer>
-
-    <script>
-      // Automatic Slideshow - change image every 4 seconds
-      var myIndex = 0;
-      carousel();
-
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-          myIndex = 1;
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 4000);
-      }
-
-      // Used to toggle the menu on small screens when clicking on the menu button
-      function myFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("show") == -1) {
-          x.className += " show";
-        } else {
-          x.className = x.className.replace(" show", "");
-        }
-      }
-
-      // When the user clicks anywhere outside of the modal, close it
-      var modal = document.getElementById("ticketModal");
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-      };
-    </script>
   </body>
 </html>
