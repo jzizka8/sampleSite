@@ -258,9 +258,15 @@ a {
 .display-container {
   position: relative;
 }
+nav{
+  background-color: #222;
+  color: white;
+  
+}
 .navbar{
   list-style-type: none;
   padding-inline-start: 0;
+  margin:5px;
   display: flex;
   align-items: center;
   justify-content: center;
