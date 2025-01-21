@@ -6,11 +6,11 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-
 }
 footer,
 header,
@@ -258,21 +258,20 @@ a {
 .display-container {
   position: relative;
 }
-nav{
+nav {
   background-color: #222;
   color: white;
-  
 }
-.navbar{
+.navbar {
   list-style-type: none;
   padding-inline-start: 0;
-  margin:5px;
+  margin: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position:  sticky;
+  position: sticky;
   font-size: 1.2rem;
-  top:0;
+  top: 0;
 }
 .navbar:after,
 .navbar:before,
