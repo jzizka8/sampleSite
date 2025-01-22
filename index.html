@@ -19,16 +19,16 @@
     <nav class="top">
       <ul class="navbar">
         <li>
-          <a href="#header" class="bar-item button ">Domů</a>
+          <a href="#header" class="bar-item button">Domů</a>
         </li>
         <li>
-          <a href="#o-nas" class="bar-item button ">O nás</a>
+          <a href="#o-nas" class="bar-item button">O nás</a>
         </li>
         <li>
-          <a href="#cenik" class="bar-item button ">Ceník</a>
+          <a href="#cenik" class="bar-item button">Ceník</a>
         </li>
         <li>
-          <a href="#kontakt" class="bar-item button ">Kontakt</a>
+          <a href="#kontakt" class="bar-item button">Kontakt</a>
         </li>
       </ul>
     </nav>
@@ -36,18 +36,24 @@
     <content class="content" style="margin-top: 46px">
       <header id="header"></header>
       <!-- O nas sekce -->
-      <section class="container content center padding-64" id="o-nas">
+      <section
+        class="container flex-section center padding-32 light-grey"
+        id="o-nas"
+      >
         <h1 class="wide">IT Firma Roman</h1>
         <p class="opacity"><i>Milujeme počítače</i></p>
-        <p class="justify"></p>
-        Jsme dynamická IT společnost, která se specializuje na vývoj softwaru a
-        poskytování IT služeb. Naším cílem je poskytovat inovativní a efektivní
-        řešení, která pomáhají našim klientům dosáhnout jejich obchodních cílů.
-        Náš tým tvoří zkušení profesionálové, kteří mají hluboké znalosti v
-        oblasti technologií a jsou odhodláni poskytovat služby nejvyšší kvality.
-        Spolupracujeme s různými klienty z různých odvětví a vždy se snažíme
-        přizpůsobit naše služby jejich specifickým potřebám.
-
+        <p class="justify">
+          Jsme dynamická IT společnost, která se specializuje na vývoj softwaru
+          a poskytování IT služeb. Naším cílem je poskytovat inovativní a
+          efektivní řešení, která pomáhají našim klientům dosáhnout jejich
+          obchodních cílů. Náš tým tvoří zkušení profesionálové, kteří mají
+          hluboké znalosti v oblasti technologií a jsou odhodláni poskytovat
+          služby nejvyšší kvality. Spolupracujeme s různými klienty z různých
+          odvětví a vždy se snažíme přizpůsobit naše služby jejich specifickým
+          potřebám.
+        </p>
+      </section>
+      <section class="container content center padding-32">
         <div class="services">
           <div>
             <h2>Správa sítí</h2>
@@ -101,7 +107,7 @@
       </section>
 
       <!-- Cenik sekce -->
-      <section id="cenik" class="container padding-64 light-grey">
+      <section id="cenik" class="container flex-section padding-64 light-grey">
         <h1>Ceník</h1>
         <table class="pricing-table">
           <thead>
@@ -137,7 +143,10 @@
         </table>
       </section>
       <!-- Kontakt sekce-->
-      <section class="container content padding-64 center" id="kontakt">
+      <section
+        class="container flex-section content padding-64 center"
+        id="kontakt"
+      >
         <h1 class="wide center">Kontakt</h1>
         <p class="opacity center">
           <i>Zavolejte nebo napište nám, rádi se s vámi spojíme!</i>
@@ -157,13 +166,15 @@
     </content>
 
     <!-- Footer -->
-    <footer class="container padding-32 center opacity light-grey">
-      <i class="fa fa-facebook-official hover-opacity"></i>
-      <i class="fa fa-instagram hover-opacity"></i>
-      <i class="fa fa-snapchat hover-opacity"></i>
-      <i class="fa fa-pinterest-p hover-opacity"></i>
-      <i class="fa fa-twitter hover-opacity"></i>
-      <i class="fa fa-linkedin hover-opacity"></i>
+    <footer class="container flex-section padding-32 center opacity light-grey">
+     <div>
+        <i class="fa fa-facebook-official hover-opacity"></i>
+        <i class="fa fa-instagram hover-opacity"></i>
+        <i class="fa fa-snapchat hover-opacity"></i>
+        <i class="fa fa-pinterest-p hover-opacity"></i>
+        <i class="fa fa-twitter hover-opacity"></i>
+        <i class="fa fa-linkedin hover-opacity"></i>
+     </div>
       <p class="medium">&copy;2025 Created by J.Zizka</p>
     </footer>
   </body>

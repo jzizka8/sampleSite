@@ -156,11 +156,12 @@ header {
 .pricing-table :is(td, th):nth-child(2) {
   text-align: right;
 }
-#cenik {
+
+.flex-section{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  overflow-y: auto;
 }
 .services {
   display: grid;
@@ -211,22 +212,8 @@ img {
 a {
   color: inherit;
 }
-.table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  display: table;
-}
-.table td,
-.table th {
-  padding: 8px 8px;
-  display: table-cell;
-  text-align: left;
-  vertical-align: top;
-}
-.table td:first-child,
-.table th:first-child {
-  padding-left: 16px;
+p{
+  max-width: 80ch;
 }
 .button {
   border: none;
@@ -553,4 +540,7 @@ nav {
 }
 .hover-none:hover {
   box-shadow: none;
+}
+footer {
+  border-top: thin solid #333;
 }
