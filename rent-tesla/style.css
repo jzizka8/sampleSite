@@ -3,6 +3,12 @@
 :before {
   box-sizing: inherit;
 }
+:root {
+  --tesla-red: #e31937;
+  --very-dark-grey: #111;
+  --dark-grey: #2c2c2c;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -115,19 +121,27 @@ h6 {
   color: #fff;
   background-color: #000;
 }
-.section-dark {
-  background-color: #333;
-  color: #fff;
+.section-very-dark {
+  color: #ccc;
+  background-color: var(--very-dark-grey);
 }
-.light-grey,
-.hover-light-grey:hover {
-  color: #000;
-  background-color: #f1f1f1;
+.section-lighter-dark {
+  color: #eee;
+  background-color: var(--dark-grey);
 }
-.mid-grey,
-.hover-mid-grey:hover {
+.section-lighter {
+  color: var(--dark-grey);
+  background-color: #ddd;
+}
+.mid-grey {
   color: white;
   background-color: #aaa;
+}
+.tesla-red-underline {
+  text-decoration: underline;
+  text-decoration-color: var(--tesla-red);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.5rem;
 }
 header {
   background-image: url(img/tesla3.webp);
@@ -152,7 +166,7 @@ header {
   min-width: 300px;
   width: 50%;
   max-width: 600px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 20px rgba(200, 200, 200, 0.15);
 }
 .pricing-table thead tr {
   background-color: #333;
@@ -167,10 +181,12 @@ header {
   border-bottom: thin solid #ddd;
 }
 .pricing-table tbody tr:nth-of-type(even) {
+  color: var(--very-dark-grey);
   background-color: #f3f3f3;
 }
 .pricing-table tbody tr:nth-of-type(odd) {
-  color: black;
+  color: var(--dark-grey);
+  background-color: #fff;
 }
 .pricing-table tbody tr:last-of-type {
   border-bottom: 2px solid #a9a9a9;
