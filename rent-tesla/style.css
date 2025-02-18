@@ -115,15 +115,34 @@ h6 {
   color: #fff;
   background-color: #000;
 }
+.section-dark {
+  background-color: #333;
+  color: #fff;
+}
 .light-grey,
 .hover-light-grey:hover {
   color: #000;
   background-color: #f1f1f1;
 }
+.mid-grey,
+.hover-mid-grey:hover {
+  color: white;
+  background-color: #aaa;
+}
 header {
-  background-image: url(img/header.png);
-  height: 500px;
+  background-image: url(img/tesla3.webp);
+  background-color: #222;
+  min-height: 600px;
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    background-position-x: center;
+    min-height: 400px;
+  }
 }
 .pricing-table {
   border-collapse: collapse;
@@ -150,6 +169,9 @@ header {
 .pricing-table tbody tr:nth-of-type(even) {
   background-color: #f3f3f3;
 }
+.pricing-table tbody tr:nth-of-type(odd) {
+  color: black;
+}
 .pricing-table tbody tr:last-of-type {
   border-bottom: 2px solid #a9a9a9;
 }
@@ -157,7 +179,7 @@ header {
   text-align: right;
 }
 
-.flex-section{
+.flex-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -212,7 +234,7 @@ img {
 a {
   color: inherit;
 }
-p{
+p {
   max-width: 80ch;
 }
 .button {
@@ -543,4 +565,7 @@ nav {
 }
 footer {
   border-top: thin solid #333;
+}
+.tesla-red {
+  color: #e31937;
 }
