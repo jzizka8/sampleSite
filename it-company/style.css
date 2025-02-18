@@ -543,4 +543,7 @@ nav {
 }
 footer {
   border-top: thin solid #333;
+  & a{
+    text-decoration: none;
+  }
 }
